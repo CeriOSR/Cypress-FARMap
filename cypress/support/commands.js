@@ -1,6 +1,6 @@
 Cypress.Commands.add('SignIn', function() {
-
-  cy.visit('https://farmmap.appetiserdev.tech/')
+  cy.visit('https://farmap.com.au/')
+  // cy.visit('http://farmmap.appetiserdev.tech/')
   cy.title().should('equal', 'FARMap')
   cy.location('protocol').should('equal', 'https:')
   
@@ -11,11 +11,11 @@ Cypress.Commands.add('SignIn', function() {
 
   cy.get('form').within(($form) => {
   //Using Then statement
-  cy.fixture('userLoginDetails').then((user) => {
+    cy.fixture('userLoginDetails').then((user) => {
     cy.get('input[type="email"]').type(user.email)
-   cy.get('input[type="password"]').type(user.password)
-   cy.contains('SIGN IN').click()
-  })
+    cy.get('input[type="password"]').type(user.password)
+    cy.contains('SIGN IN').click()
+    })
   
   }) 
   cy.url().should('include', 'farm')

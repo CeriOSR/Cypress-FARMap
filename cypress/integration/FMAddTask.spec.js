@@ -1,7 +1,7 @@
 describe('Add a farm', function() {
 
     before(function() {
-      cy.SignIn()
+      cy.SignIn(this.url)
     })
 
     it('Go to calendar', function() {
@@ -49,11 +49,10 @@ describe('Add a farm', function() {
      cy.xpath("(//input[contains(@class, 'flatpickr-hour')])[2]")
        .type('7{enter}')
      
-     // TO DO - figure out how to assert times entered
-     // cy.xpath("//input[contains(@id, 'start_time')]")
-     //   .should('contain', '6:3')
-     // cy.get('#end_time')
-     //   .should('contain', '12:00')
+     cy.xpath("//input[contains(@id, 'start_time')]")
+       .should('have.value', '06:30')
+     cy.get('#end_time')
+       .should('have.value', '12:00')
 
      cy.get('.btn-primary').click()
     })
