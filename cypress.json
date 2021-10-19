@@ -1,0 +1,8 @@
+{
+ "baseUrl" : "https://farmmap.appetiserdev.tech/",
+ "reporter": "cypress-multi-reporter",
+ "reporterOptions": {
+  
+ }
+ 
+}

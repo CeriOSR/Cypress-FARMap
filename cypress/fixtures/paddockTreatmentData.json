@@ -1,0 +1,18 @@
+{
+ "date": "23/10/2021",
+ "chemicalUsed": "test chemical 25",
+ "crop": "nil",
+ "sprayArea": "2",
+ "ratePerHa": "50",
+ "costPerLiter": "25",
+ "liters": "100",
+ "costPerHa": "2500",
+ "batchNumber": "12345",
+ "labourHours": "12",
+ "windSpeed": "5",
+ "windDirection": "North",
+ "applicatorName": "Rey Cerio",
+ "applicatorContact": "1234567890",
+ "supervisorName": "Rey Cerio",
+ "supervisorContact": "1234567890"
+}
